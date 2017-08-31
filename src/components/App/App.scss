@@ -1,0 +1,33 @@
+body {
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body {
+  *::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #ccc;
+    font-size: 12px;
+  }
+
+  *:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+    font-size: 12px;
+  }
+
+  *::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ccc;
+    font-size: 12px;
+  }
+
+  *:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #ccc;
+    font-size: 12px;
+  }
+}

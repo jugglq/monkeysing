@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import DevTools from 'mobx-react-devtools'
+import {BrowserRouter as Router} from 'react-router-dom'
+import {Provider} from 'mobx-react';
 
-import Layout from './components/Layout/Layout';
+import App from './components/App/App';
+import stores from './stores/stores'
 
-ReactDOM.render(
-  <div>
-  <Layout/>
-  <DevTools/>
-</div>, document.getElementById('root'));
+ReactDOM.render((
+  <Provider {...stores}>
+    <Router>
+      <App/>
+    </Router>
+  </Provider>
+), document.getElementById('root'));

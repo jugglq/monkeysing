@@ -1,0 +1,76 @@
+@import "../Common/Variables";
+
+header {
+  height: 60px;
+  line-height: 60px;
+  background-color: $backgroundColor;
+  border-bottom: 1px solid rgba(30,35,42,.06);
+
+  .header-inner {
+    width: 1000px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    color: $primaryColor;
+    font-size: 24px;
+    letter-spacing: 4px;
+    width: 120px;
+    display: inline-block;
+  }
+
+  nav {
+    margin-left: 32px;
+    display: inline-block;
+    vertical-align: top;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 12px;
+
+        a {
+          color: $primaryUnactiveColor;
+          font-weight: bold;
+          transition: all 0.2;
+        }
+        a.active {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  .search {
+    display: inline-block;
+    vertical-align: top;
+    height: 32px;
+    margin-top: 14px;
+    border: rgba(238, 238, 238, 0.6);
+    border-radius: 2px;
+    background: rgba(238, 238, 238, 0.6);
+
+    input {
+      width: 240px;
+      padding: 4px 8px;;
+      height: 24px;
+      background: transparent;
+      vertical-align: top;
+      border: none;
+      font-size: 12px;
+      color: #666;
+      box-shadow: none;
+      outline: none;
+    }
+
+    .search-icon {
+      height: 22px;
+      vertical-align: top;
+      margin-top: 5px;
+    }
+  }
+}
